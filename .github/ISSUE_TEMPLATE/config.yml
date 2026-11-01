@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security report
+    url: https://github.com/giridharmb/SystemMonitor/security/advisories/new
+    about: Report vulnerabilities without exposing them in a public issue.
+  - name: Build and Xcode help
+    url: https://github.com/giridharmb/SystemMonitor/blob/main/docs/XCODE.md
+    about: Review signing, debugging and build instructions before reporting a setup issue.

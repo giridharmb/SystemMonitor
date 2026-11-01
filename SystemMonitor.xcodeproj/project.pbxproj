@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7549D32531BE2BEA28822E3C /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3E291BD9A4625373EEE20FA /* AppIcon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01F9A679BB65A3CCAD46F348 /* build-icon.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-icon.sh"; sourceTree = "<group>"; };
+		03D718AD4011B5EE0F64EA5D /* xcode-build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "xcode-build.sh"; sourceTree = "<group>"; };
+		06DFCC6A7424C72BF912780B /* ioreport.rs */ = {isa = PBXFileReference; path = ioreport.rs; sourceTree = "<group>"; };
+		10FDC9ACCFAD07F1677F4052 /* VALIDATION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = VALIDATION.md; sourceTree = "<group>"; };
+		13F048ABD098AAA21077DD0F /* mod.rs */ = {isa = PBXFileReference; path = mod.rs; sourceTree = "<group>"; };
+		175E617ACF5DD38F80F85A4E /* diagnostics.rs */ = {isa = PBXFileReference; path = diagnostics.rs; sourceTree = "<group>"; };
+		1CBFB5E8A575C83EF1C2AD0F /* test_release.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_release.py; sourceTree = "<group>"; };
+		266DDAC03F9864B660525E5D /* tabs.rs */ = {isa = PBXFileReference; path = tabs.rs; sourceTree = "<group>"; };
+		280A4724240F7F2B356A1D5A /* ARCHITECTURE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ARCHITECTURE.md; sourceTree = "<group>"; };
+		2D834D5A0162995622D95004 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		34DFF4750678BB5DFFE2EDA6 /* measure.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = measure.py; sourceTree = "<group>"; };
+		365DF520FD1CC3EA8D88BC48 /* DISTRIBUTION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DISTRIBUTION.md; sourceTree = "<group>"; };
+		3B6DFAC060763FADEBDECBBE /* bug_report.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = bug_report.yml; sourceTree = "<group>"; };
+		3F81603D318AB02E7C8A6EBB /* feature_request.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = feature_request.yml; sourceTree = "<group>"; };
+		42B67EF761029520F521B3C7 /* config.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = config.yml; sourceTree = "<group>"; };
+		4807E0874E5DDE6081331A04 /* validate.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = validate.sh; sourceTree = "<group>"; };
+		4F4ACE2535C5C18291F3C7D9 /* table.rs */ = {isa = PBXFileReference; path = table.rs; sourceTree = "<group>"; };
+		55B1AA26290DF2F98D58063E /* Cargo.lock */ = {isa = PBXFileReference; path = Cargo.lock; sourceTree = "<group>"; };
+		56F032104F3E199B7C0A1A22 /* SECURITY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SECURITY.md; sourceTree = "<group>"; };
+		607932E760E1D84EA72BCAB7 /* create-dmg.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "create-dmg.sh"; sourceTree = "<group>"; };
+		6F02368D0B8BB8BDCD9BA0BE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7B23E34616B0CDD9747D6FCE /* ci.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = ci.yml; sourceTree = "<group>"; };
+		7C19DB3E2793295D0CA467E4 /* XCODE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = XCODE.md; sourceTree = "<group>"; };
+		7DADD4AA23C4B561AD493D16 /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
+		84E1A15549BB387F3A982083 /* bundle.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = bundle.sh; sourceTree = "<group>"; };
+		85709681EA371F0A2208FE16 /* test_xcode.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_xcode.py; sourceTree = "<group>"; };
+		86916B30DE9CBF9CFD8958F6 /* release-dmg.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "release-dmg.sh"; sourceTree = "<group>"; };
+		8A43F15C2807D1D9CF389BF3 /* overview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overview.png; sourceTree = "<group>"; };
+		9B96A436F378BE1C7E1570E8 /* sampler.rs */ = {isa = PBXFileReference; path = sampler.rs; sourceTree = "<group>"; };
+		9D04CE2D4BAC06E022B638E7 /* SystemMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BE25D8FFA8006B41B3BCEC /* verify-dmg.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "verify-dmg.sh"; sourceTree = "<group>"; };
+		A7CAB6FFD49B1F5E4BAD71C0 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		AAD70279BC1E12B0B7E5FB2D /* Cargo.toml */ = {isa = PBXFileReference; path = Cargo.toml; sourceTree = "<group>"; };
+		AB144E16FCF8B9770FA68E70 /* mac.rs */ = {isa = PBXFileReference; path = mac.rs; sourceTree = "<group>"; };
+		B65CB79611A152140602766B /* health.rs */ = {isa = PBXFileReference; path = health.rs; sourceTree = "<group>"; };
+		C61CA85180ABEBBEB06A4A43 /* main.rs */ = {isa = PBXFileReference; path = main.rs; sourceTree = "<group>"; };
+		C772B5B18814A0C174D8179E /* PULL_REQUEST_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PULL_REQUEST_TEMPLATE.md; sourceTree = "<group>"; };
+		C9D95D4BE555306C00B21480 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D10032BCB2E5154955AE11C4 /* gpu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gpu.png; sourceTree = "<group>"; };
+		D3E291BD9A4625373EEE20FA /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		D6A291512339591C27D8BAB0 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		DB38E9F98422762901CEFE28 /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
+		E558155A510E56E234ED8C6C /* ACKNOWLEDGMENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ACKNOWLEDGMENTS.md; sourceTree = "<group>"; };
+		EC6C17D3BCEF4D0C1579E2A1 /* util.rs */ = {isa = PBXFileReference; path = util.rs; sourceTree = "<group>"; };
+		F8D9A3BC8FA771C5C859F19C /* widgets.rs */ = {isa = PBXFileReference; path = widgets.rs; sourceTree = "<group>"; };
+		FB48750CA11DF8A2707A129C /* logs.rs */ = {isa = PBXFileReference; path = logs.rs; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		376E0483056A30B792B4177B = {
+			isa = PBXGroup;
+			children = (
+				55B1AA26290DF2F98D58063E /* Cargo.lock */,
+				AAD70279BC1E12B0B7E5FB2D /* Cargo.toml */,
+				A7CAB6FFD49B1F5E4BAD71C0 /* CHANGELOG.md */,
+				2D834D5A0162995622D95004 /* CONTRIBUTING.md */,
+				7DADD4AA23C4B561AD493D16 /* LICENSE */,
+				DB38E9F98422762901CEFE28 /* project.yml */,
+				6F02368D0B8BB8BDCD9BA0BE /* README.md */,
+				56F032104F3E199B7C0A1A22 /* SECURITY.md */,
+				EEBBC17EA18F6B10103DDF34 /* .github */,
+				98D5A30242B1786397AA38BE /* assets */,
+				FF35AE3CC16892804BCD45B5 /* docs */,
+				851A5ECEE782697715AA2CEC /* scripts */,
+				F20FF1238D2C22C783B14980 /* src */,
+				ACFCFDAF591B0326AAB2E2F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CEAB6F4259575FE3C38FFC6 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				D10032BCB2E5154955AE11C4 /* gpu.png */,
+				8A43F15C2807D1D9CF389BF3 /* overview.png */,
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
+		6675FAC1535F9C6E65CD6ADE /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				7B23E34616B0CDD9747D6FCE /* ci.yml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
+		851A5ECEE782697715AA2CEC /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				01F9A679BB65A3CCAD46F348 /* build-icon.sh */,
+				84E1A15549BB387F3A982083 /* bundle.sh */,
+				607932E760E1D84EA72BCAB7 /* create-dmg.sh */,
+				34DFF4750678BB5DFFE2EDA6 /* measure.py */,
+				86916B30DE9CBF9CFD8958F6 /* release-dmg.sh */,
+				1CBFB5E8A575C83EF1C2AD0F /* test_release.py */,
+				85709681EA371F0A2208FE16 /* test_xcode.py */,
+				4807E0874E5DDE6081331A04 /* validate.sh */,
+				A6BE25D8FFA8006B41B3BCEC /* verify-dmg.sh */,
+				03D718AD4011B5EE0F64EA5D /* xcode-build.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		8CBFA159DF9B139A2F822A14 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				13F048ABD098AAA21077DD0F /* mod.rs */,
+				4F4ACE2535C5C18291F3C7D9 /* table.rs */,
+				266DDAC03F9864B660525E5D /* tabs.rs */,
+				F8D9A3BC8FA771C5C859F19C /* widgets.rs */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		98D5A30242B1786397AA38BE /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				D3E291BD9A4625373EEE20FA /* AppIcon.icns */,
+				D6A291512339591C27D8BAB0 /* AppIcon.png */,
+				C9D95D4BE555306C00B21480 /* README.md */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		ACFCFDAF591B0326AAB2E2F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D04CE2D4BAC06E022B638E7 /* SystemMonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B356051207E5350ED41DC5B2 /* ISSUE_TEMPLATE */ = {
+			isa = PBXGroup;
+			children = (
+				3B6DFAC060763FADEBDECBBE /* bug_report.yml */,
+				42B67EF761029520F521B3C7 /* config.yml */,
+				3F81603D318AB02E7C8A6EBB /* feature_request.yml */,
+			);
+			path = ISSUE_TEMPLATE;
+			sourceTree = "<group>";
+		};
+		EEBBC17EA18F6B10103DDF34 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				C772B5B18814A0C174D8179E /* PULL_REQUEST_TEMPLATE.md */,
+				B356051207E5350ED41DC5B2 /* ISSUE_TEMPLATE */,
+				6675FAC1535F9C6E65CD6ADE /* workflows */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		F20FF1238D2C22C783B14980 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				175E617ACF5DD38F80F85A4E /* diagnostics.rs */,
+				B65CB79611A152140602766B /* health.rs */,
+				06DFCC6A7424C72BF912780B /* ioreport.rs */,
+				FB48750CA11DF8A2707A129C /* logs.rs */,
+				AB144E16FCF8B9770FA68E70 /* mac.rs */,
+				C61CA85180ABEBBEB06A4A43 /* main.rs */,
+				9B96A436F378BE1C7E1570E8 /* sampler.rs */,
+				EC6C17D3BCEF4D0C1579E2A1 /* util.rs */,
+				8CBFA159DF9B139A2F822A14 /* ui */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		FF35AE3CC16892804BCD45B5 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				E558155A510E56E234ED8C6C /* ACKNOWLEDGMENTS.md */,
+				280A4724240F7F2B356A1D5A /* ARCHITECTURE.md */,
+				365DF520FD1CC3EA8D88BC48 /* DISTRIBUTION.md */,
+				10FDC9ACCFAD07F1677F4052 /* VALIDATION.md */,
+				7C19DB3E2793295D0CA467E4 /* XCODE.md */,
+				4CEAB6F4259575FE3C38FFC6 /* screenshots */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0601DB6563F6577EB6AF437 /* SystemMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6DA59281DCD098BF6F77D32 /* Build configuration list for PBXNativeTarget "SystemMonitor" */;
+			buildPhases = (
+				9774F5BADAB6A7B9D67822AF /* Build Rust application with Cargo */,
+				3CA1ED23F676948E463AA385 /* Sources */,
+				31BCD9C7A3DE52D79843340E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SystemMonitor;
+			packageProductDependencies = (
+			);
+			productName = SystemMonitor;
+			productReference = 9D04CE2D4BAC06E022B638E7 /* SystemMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2C8DF2D97AFD8C71FFAE6C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					C0601DB6563F6577EB6AF437 = {
+						DevelopmentTeam = 2XXV2J4DUX;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 97E475AD425F43D805396DA7 /* Build configuration list for PBXProject "SystemMonitor" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 376E0483056A30B792B4177B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = ACFCFDAF591B0326AAB2E2F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0601DB6563F6577EB6AF437 /* SystemMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31BCD9C7A3DE52D79843340E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7549D32531BE2BEA28822E3C /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9774F5BADAB6A7B9D67822AF /* Build Rust application with Cargo */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Cargo.toml",
+				"$(SRCROOT)/Cargo.lock",
+				"$(SRCROOT)/scripts/xcode-build.sh",
+			);
+			name = "Build Rust application with Cargo";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+				"$(DERIVED_FILE_DIR)/SystemMonitor-Info.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "exec /bin/bash \"$SRCROOT/scripts/xcode-build.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CA1ED23F676948E463AA385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		25E9FDA5CE0E2EB0F6BC4994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4C21D2C7B61C93F9F633F691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2XXV2J4DUX;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(DERIVED_FILE_DIR)/SystemMonitor-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.systemmonitor.desktop;
+				PRODUCT_NAME = SystemMonitor;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		5477F4E97CD316C7CDBEC5AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BE05F3E5CB2B44C671E8F038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2XXV2J4DUX;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(DERIVED_FILE_DIR)/SystemMonitor-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.systemmonitor.desktop;
+				PRODUCT_NAME = SystemMonitor;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97E475AD425F43D805396DA7 /* Build configuration list for PBXProject "SystemMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25E9FDA5CE0E2EB0F6BC4994 /* Debug */,
+				5477F4E97CD316C7CDBEC5AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D6DA59281DCD098BF6F77D32 /* Build configuration list for PBXNativeTarget "SystemMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C21D2C7B61C93F9F633F691 /* Debug */,
+				BE05F3E5CB2B44C671E8F038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2C8DF2D97AFD8C71FFAE6C6 /* Project object */;
+}

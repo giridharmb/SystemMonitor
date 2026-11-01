@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest a metric, workflow or usability improvement.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the task you cannot complete or the question the current app cannot answer.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Explain the expected result and which tab or workflow it belongs to.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Hardware, data source and alternatives
+      description: Include relevant Mac/macOS details, known APIs or alternative workflows. Discuss likely collection overhead or permissions if applicable.

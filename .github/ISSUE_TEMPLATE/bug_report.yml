@@ -1,0 +1,59 @@
+name: Bug report
+description: Report incorrect readings, a crash, or unexpected behavior.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please inspect screenshots and logs before attaching them. Remove private paths, hostnames, network details and credentials. Report security vulnerabilities through the repository's Security tab instead.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: "0.1.0 or git commit SHA"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Mac chip and macOS version
+      placeholder: "Apple M4 Pro, macOS 26.6.2"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Overview
+        - CPU
+        - GPU
+        - Memory
+        - Disk
+        - Network
+        - Apps
+        - Power
+        - Logs
+        - Build / Xcode / packaging
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include how you built/launched the app and whether the issue repeats.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+      description: For metric differences, name the comparison tool, units and sampling interval.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted evidence
+      description: Optional screenshots, concise error messages or measurement results. Do not paste a complete system log.

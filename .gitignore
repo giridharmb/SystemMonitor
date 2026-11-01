@@ -1,0 +1,17 @@
+/target
+/dist
+**/xcuserdata/
+*.xcuserstate
+.DS_Store
+# Local credentials, signing material and diagnostic captures.
+.env
+.env.*
+!.env.example
+*.p8
+*.p12
+*.pfx
+*.mobileprovision
+*.provisionprofile
+/samples.ndjson
+__pycache__/
+*.pyc

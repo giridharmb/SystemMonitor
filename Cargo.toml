@@ -1,0 +1,32 @@
+[package]
+name = "SystemMonitor"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+description = "A low-overhead macOS system monitor built with gpui-kit."
+license = "MIT"
+repository = "https://github.com/giridharmb/SystemMonitor"
+readme = "README.md"
+keywords = ["macos", "system-monitor", "gpui", "monitoring"]
+categories = ["gui", "visualization"]
+default-run = "SystemMonitor"
+
+[dependencies]
+gpui-kit = "=0.8.1"
+sysinfo = "0.37"
+smol = "2"
+libc = "0.2"
+core-foundation = "0.10"
+core-foundation-sys = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+lto = "thin"
+codegen-units = 4
+strip = true
+panic = "abort"
+opt-level = 3
+
+[lints.rust]
+non_snake_case = { level = "allow" }

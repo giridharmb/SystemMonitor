@@ -1,0 +1,34 @@
+name: macOS checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: macos-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: macos-15
+    timeout-minutes: 45
+    env:
+      MACOSX_DEPLOYMENT_TARGET: "13.0"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: dtolnay/rust-toolchain@b725eda525362e7cf34af9a7243cac1e3f01a7ec # stable
+        with:
+          toolchain: 1.99.1
+          components: rustfmt, clippy
+      - name: Validate application and packaging scripts
+        run: ./scripts/validate.sh
+      - name: Build Xcode application without a developer account
+        run: |
+          xcodebuild -project SystemMonitor.xcodeproj -scheme SystemMonitor \
+            -configuration Release -destination 'generic/platform=macOS' \
+            -derivedDataPath target/xcode-ci CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= build
+          codesign --verify --deep --strict target/xcode-ci/Build/Products/Release/SystemMonitor.app
+          cmp assets/AppIcon.icns target/xcode-ci/Build/Products/Release/SystemMonitor.app/Contents/Resources/AppIcon.icns

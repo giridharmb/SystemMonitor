@@ -1,0 +1,92 @@
+name: SystemMonitor
+options:
+  minimumXcodeGenVersion: "2.44.0"
+  projectFormat: xcode16_0
+  xcodeVersion: "27.0"
+  deploymentTarget:
+    macOS: "13.0"
+  defaultConfig: Debug
+  # Xcode's document debugging injects Cocoa arguments into the Rust CLI.
+  postGenCommand: |
+    python3 - <<'PY'
+    from pathlib import Path
+    scheme = Path('SystemMonitor.xcodeproj/xcshareddata/xcschemes/SystemMonitor.xcscheme')
+    scheme.write_text(scheme.read_text().replace('debugDocumentVersioning = "YES"', 'debugDocumentVersioning = "NO"'))
+    PY
+fileGroups:
+  - assets
+  - src
+  - scripts
+  - docs
+  - Cargo.toml
+  - Cargo.lock
+  - README.md
+  - LICENSE
+  - CHANGELOG.md
+  - CONTRIBUTING.md
+  - SECURITY.md
+  - .github
+  - project.yml
+settings:
+  base:
+    ARCHS: $(NATIVE_ARCH_ACTUAL)
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+    DEBUG_INFORMATION_FORMAT: dwarf
+    COPY_PHASE_STRIP: NO
+    STRIP_INSTALLED_PRODUCT: NO
+targets:
+  SystemMonitor:
+    type: application
+    platform: macOS
+    sources:
+      - path: assets/AppIcon.icns
+        buildPhase: resources
+    settings:
+      base:
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_IDENTITY: Apple Development
+        "CODE_SIGN_IDENTITY[sdk=macosx*]": Apple Development
+        DEVELOPMENT_TEAM: 2XXV2J4DUX
+        PROVISIONING_PROFILE_SPECIFIER: ""
+        PRODUCT_BUNDLE_IDENTIFIER: dev.systemmonitor.desktop
+        PRODUCT_NAME: SystemMonitor
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: $(DERIVED_FILE_DIR)/SystemMonitor-Info.plist
+        ENABLE_APP_SANDBOX: NO
+        SKIP_INSTALL: NO
+      configs:
+        Debug:
+          ENABLE_HARDENED_RUNTIME: NO
+        Release:
+          ENABLE_HARDENED_RUNTIME: YES
+    preBuildScripts:
+      - name: Build Rust application with Cargo
+        script: exec /bin/bash "$SRCROOT/scripts/xcode-build.sh"
+        shell: /bin/bash
+        showEnvVars: false
+        basedOnDependencyAnalysis: false
+        inputFiles:
+          - $(SRCROOT)/Cargo.toml
+          - $(SRCROOT)/Cargo.lock
+          - $(SRCROOT)/scripts/xcode-build.sh
+        outputFiles:
+          - $(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)
+          - $(DERIVED_FILE_DIR)/SystemMonitor-Info.plist
+schemes:
+  SystemMonitor:
+    build:
+      targets:
+        SystemMonitor: all
+    run:
+      config: Debug
+      debugEnabled: true
+      environmentVariables:
+        RUST_BACKTRACE: "1"
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
